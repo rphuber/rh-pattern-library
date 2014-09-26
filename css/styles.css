@@ -121,7 +121,7 @@ mark {
 /**
  * Address inconsistent and variable font size in all browsers.
  */
-small {
+small, blockquote footer {
   font-size: 80%; }
 
 /**
@@ -363,6 +363,7 @@ th {
   box-sizing: border-box; }
 
 /* Screen sizes */
+/* Colors */
 /* Main Container */
 .container {
   width: 95%;
@@ -524,6 +525,76 @@ img {
 
   .small-three-quarters {
     width: 75%; } }
+/* Screen sizes */
+/* Colors */
+html {
+  font-size: 1em; }
+
+body {
+  color: #333;
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5em; }
+
+p {
+  margin-bottom: 1.5em; }
+
+a,
+a:visited {
+  color: #0f82bd; }
+  a:hover,
+  a:visited:hover {
+    color: #333; }
+
+hr {
+  border: 0;
+  background-color: #ccc;
+  height: 1px;
+  margin: 1.5em 0; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
+  margin: 1.5em 0 0.5em;
+  line-height: 1.2; }
+
+h5,
+h6 {
+  line-height: 1.5;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+
+h1 {
+  font-size: 3.998em; }
+
+h2 {
+  font-size: 2.827em; }
+
+h3 {
+  font-size: 1.999em; }
+
+h4 {
+  font-size: 1.414em; }
+
+h5 {
+  font-size: 1em; }
+
+h6 {
+  font-size: 0.707em; }
+
+ul,
+ol {
+  margin: 0 0 1.5em 1.5em; }
+
+blockquote {
+  color: gray;
+  font-style: italic;
+  margin-left: 1.5em; }
+  blockquote footer {
+    font-style: normal; }
+
 /**
  *--------------------------------------------------------------------------------------------------
  * 2.0 - Advanced Patterns
