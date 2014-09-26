@@ -221,6 +221,8 @@
 			</div>
 	</section>
 
+
+	<!-- Typography -->
 	<section>
 		<div class="container">
 			<h1>Typography</h1>
@@ -284,6 +286,8 @@
 		</div> <!-- end container -->
 	</section>
 
+
+	<!-- Buttons -->
 	<section>
 		<div class="container">
 			<h1>Buttons</h1>
@@ -306,17 +310,177 @@
 						<p><button class="btn">Default Button</button></p>
 						<p><button class="btn-large">Large Button</button></p>
 					</p>
-				</div>
+				</div> <!-- end col-4 -->
 				<div class="col-4">
 					<h4>HTML elements</h4>
 					<p><button class="btn">Button</button></p>
 					<p><a href="#" class="btn">Anchor Tag</a></p>
 					<p><input type="submit" class="btn" value="Submit Input"></p>
 					<p><input type="button" class="btn" value="Button Input"></p>
-				</div>
-			</div>
+				</div> <!-- end col-4 -->
+			</div> <!-- end row -->
 		</div>
 	</section>
+
+	<!-- Forms -->
+	<section>
+		<div class="container">
+			<h1>Forms</h1>
+			
+			<hr>
+
+			<form action="">
+				<div class="row">
+					<div class="col-half">
+						<fieldset>
+							<legend>Inputs</legend>
+
+								<div class="field-group">
+									<label for="demo-input-1">This is a label</label>
+									<input type="text" id="demo-input-1" placeholder="This is a text input">
+									<p class="help">This is contextual help for the field above</p>
+								</div> <!-- end field-group -->
+
+								<div class="field-group field-error">
+									<label for="demo-input-2">Error Field</label>
+									<input type="text" id="demo-input-2" placeholder="This is a text input">
+									<p class="help">This is an error message for the field above</p>
+								</div> <!-- end field-group -->
+
+								<div class="field-group">
+									<label for="demo-textarea">Error Field</label>
+									<textarea name="demo-textarea" id="demo-textarea" cols="30" rows="10" placeholder="This is a textarea"></textarea>
+								</div> <!-- end field-group -->
+
+						</fieldset>
+					</div> <!-- end col-half -->
+
+					<div class="col-half">
+						<fieldset>
+							<legend>Radios and Checkboxes</legend>
+
+							<div class="field-group">
+								<input type="radio" name="demo-radio" id="demo-radio-1">
+								<label for="demo-radio-1">Radio 1</label>
+
+								<input type="radio" name="demo-radio" id="demo-radio-2">
+								<label for="demo-radio-2">Radio 2</label>
+
+								<input type="radio" name="demo-radio" id="demo-radio-3">
+								<label for="demo-radio-3">Radio 3</label>
+							</div> <!-- end field-group -->
+
+							<div class="field-group">
+								<input type="checkbox" id="demo-checkbox" name="demo-checkbox">
+								<label for="demo-checkbox">This is a checkbox</label>
+							</div><!-- end field-group -->
+						</fieldset>
+					</div> <!-- end col-half -->
+				</div> <!-- end row -->
+			</form>
+
+			<div class="row">
+				<div class="col-4">
+					<form action="">
+						<fieldset>
+							<legend>Sign-in Form</legend>
+
+							<div class="field-group">
+								<label for="sign-in-username">Username: <span class="required">*</span></label>
+								<input type="text" id="sign-in-username" name="sign-in-username">
+							</div> <!-- end field-group -->
+
+							<div class="field-group">
+								<label for="sign-in-pwd">Password: <span class="required">*</span></label>
+								<input type="password" id="sign-in-pwd" name="sign-in-pwd">
+							</div> <!-- end field-group -->
+
+							<div class="field-group">
+								<input type="checkbox" id="sign-in-checkbox" name="sign-in-checkbox" />
+								<label for="sign-in-checkbox">Remember me</label>
+							</div> <!-- end field-group -->
+
+							<div class="field-group">
+								<input type="submit" class="btn" value="Sign In">
+							</div> <!-- end field-group -->
+
+							<p><em><span class="required">*</span> required fields</em></p>
+						</fieldset>
+					</form>
+				</div> <!-- end col-4 -->
+
+				<div class="col-4">
+					<form action="">
+						<fieldset>
+							<legend>Sign-up Form</legend>
+
+							<div class="field-group">
+								<label for="sign-up-email">Email address: <span class="required">*</span></label>
+								<input type="email" id="sign-up-email" name="sign-up-email">
+							</div> <!-- end field-group -->
+
+							<div class="field-group">
+								<label for="sign-up-name">Username: <span class="required">*</span></label>
+								<input type="text" id="sign-up-username" name="sign-up-username">
+							</div> <!-- end field-group -->
+
+							<div class="field-group">
+								<label for="sign-up-pwd">Password: <span class="required">*</span></label>
+								<input type="password" id="sign-up-pwd" name="sign-up-pwd">
+							</div> <!-- end field-group -->
+
+							<div class="field-group">
+								<label for="sign-up-confirm-pwd">Confirm Password: <span class="required">*</span></label>
+								<input type="password" id="sign-up-confirm-pwd" name="sign-up-confirm-pwd">
+							</div> <!-- end field-group -->
+
+							<div class="field-group">
+								<input type="submit" class="btn" value="Sign Up">
+							</div> <!-- end field-group -->
+
+							<p><em><span class="required">*</span> required fields</em></p>
+						</fieldset>
+					</form>					
+				</div> <!-- end col-4 -->
+
+				<div class="col-4">
+					<form action="">
+						<fieldset>
+							<legend>Contact Form</legend>
+
+							<div class="field-group">
+								<label for="contact-name">Name: <span class="required">*</span></label>
+								<input type="text" id="contact-name" name="contact-name">
+							</div> <!-- end field-group -->
+
+							<div class="field-group">
+								<label for="contact-email">Email address: <span class="required">*</span></label>
+								<input type="email" id="contact-email" name="contact-email">
+							</div> <!-- end field-group -->
+
+							<div class="field-group">
+								<label for="contact-website">Website:</label>
+								<input type="url" id="contact-website" name="contact-website">
+							</div> <!-- end field-group -->
+
+							<div class="field-group">
+								<label for="contact-textarea">Message: <span class="required">*</span></label>
+								<textarea name="contact-textarea" id="contact-textarea" cols="30" rows="10" class="field-full"></textarea>
+							</div> <!-- end field-group -->
+
+							<div class="field-group">
+								<input type="submit" class="btn" value="Send Message">
+							</div> <!-- end field-group -->
+
+							<p><em><span class="required">*</span> required fields</em></p>
+						</fieldset>
+					</form>
+				</div> <!-- end col-4 -->
+			</div> <!-- end row -->		
+		</div> <!-- end container -->
+	</section>
+
+
 
 	</div> <!-- end container -->
 </body>
