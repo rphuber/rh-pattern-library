@@ -14,12 +14,14 @@ This document will describee the structure of each pattern and its behaviour und
 - Responsive and Fluid
 - Columns are wrapped in a container .row
 - Each column will have a class of .col-$
+- In a .row-flush a column can have a class of .flush to remove padding
 - A .container class that wraps all content on the page.  Must be fluid in width.
 
 **Responsive Behaviour**
 
 - In medium screen sizes (default at <1024px) the columns will have their gutter width halved.
 - In small screen sizes (default at <768px) all columns will get a full (100%) width.
+- In small screen sizes (default at <768px) columns can use class of .small-$ to maintain original grid 
 
 
 ## Typography
