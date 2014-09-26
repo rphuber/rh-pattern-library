@@ -1,30 +1,62 @@
-// Grid Variables
+/**
+ *--------------------------------------------------------------------------------------------------
+ * 1.0 - Grid
+ *--------------------------------------------------------------------------------------------------
+ */
 
-/* Screen sizes */
+ /* 1.1 - Screen sizes */
 
-$medium: 1024px;
-$small: 768px;
+ $medium: 1024px;
+ $small: 768px;
 
-$column-count: 12;
-$gutter: 1em;
+ /* 1.2 - columns */
+ $column-count: 12;
+ $gutter: 1em;
 
+/**
+ *--------------------------------------------------------------------------------------------------
+ * 2.0 - Typography
+ *--------------------------------------------------------------------------------------------------
+ */
 
-// Typography Variables
+ /* 2.1 - Colors */
+ $text-color: #333;
+ $link-color: #0f82bd;
+ $hr-color: #ccc;
+ $muted-text-color: lighten($text-color, 30%);
 
-/* Colors */
-$text-color: #333;
-$link-color: #0f82bd;
-$hr-color: #ccc;
-$muted-text-color: lighten($text-color, 30%);
+ /* 2.2 - Baseline */
+ $baseline: 1.5em;
 
+ /* 2.3 - Font */
+ $body-font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
 
-$baseline: 1.5em;
+ /* 2.4 - Sizes */
+ $h1-size: 3.998em;
+ $h2-size: 2.827em;
+ $h3-size: 1.999em;
+ $h4-size: 1.414em;
+ $h5-size: 1em;
+ $h6-size: .707em;
 
-$body-font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+ /**
+ *--------------------------------------------------------------------------------------------------
+ * 3.0 - Buttons
+ *--------------------------------------------------------------------------------------------------
+ */
 
-$h1-size: 3.998em;
-$h2-size: 2.827em;
-$h3-size: 1.999em;
-$h4-size: 1.414em;
-$h5-size: 1em;
-$h6-size: .707em;
+ $btn-radius: 3px;
+
+ /* 3.1 - Sizes */
+ $btn-small-font-size: .75em;
+ $btn-large-font-size: 2em;
+
+ /* 3.2 - Colors */
+ $btn-default-bg: #dde2d4;
+ $btn-default-text-color: #333;
+
+ $btn-primary-bg: #0f82bd;
+ $btn-primary-text-color: lighten($btn-primary-bg, 50%);
+
+ 
+

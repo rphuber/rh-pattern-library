@@ -39,6 +39,7 @@ This document will describee the structure of each pattern and its behaviour und
 
 **Description**
 
+- square or rounded
 - 2 styles: default, primary
 - 3 sizes: small, default, large
 - Styles for all HTML elements: '<a>, <button>, <input type="button">, <input type="submit">'

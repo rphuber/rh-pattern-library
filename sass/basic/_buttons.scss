@@ -1,0 +1,56 @@
+@import "../settings/settings";
+
+button, 
+.btn, 
+a.btn {
+	border: 0;
+	background-color: $btn-default-bg;
+	color: $btn-default-text-color;
+	cursor: pointer;
+	line-height: 1;
+	font-family: inherit;
+	font-size: inline-block;
+	text-decoration: none;
+	display: inline-block;
+	padding: .75em 1.5em;
+
+	&:hover {
+		background-color: darken($btn-default-bg, 50%);
+		color: #fff;
+	}
+
+	&:active {
+		background-color: darken($btn-default-bg, 25%);
+	} 
+
+}
+
+.rounded {
+	border-radius: $btn-radius;
+}
+
+.btn-primary {
+	@extend .btn;
+	background-color: $btn-primary-bg;
+	color: $btn-primary-text-color;
+
+	&:hover {
+		background-color: darken($btn-primary-bg, 10%);
+		color: #fff;
+	}
+
+	&:active {
+		background-color: darken($btn-primary-bg, 5%);
+	} 
+}
+
+.btn-small {
+	@extend .btn;
+	font-size: $btn-small-font-size;
+}
+
+.btn-large {
+	@extend .btn;
+	font-size: $btn-large-font-size;
+	font-weight: bold;
+}
