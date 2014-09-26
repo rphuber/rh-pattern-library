@@ -1,0 +1,109 @@
+@import '../settings/settings';
+
+/* Main Container */
+.container {
+	width: 95%;
+	margin: 0 auto;
+}
+
+/* Columns */
+[class^="col-"] {
+	float: left;
+	padding: 0 $gutter;
+}
+
+/* Row */
+.row {
+	margin-left: -$gutter;
+	margin-right: -$gutter;
+	
+	&:after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}
+
+/* Column Width */
+@for $i from 1 through $column-count {
+	.col-#{$i} {
+		width: (100 / $column-count ) * $i * 1%;
+	}
+}
+
+/* Special classes */
+.col-third {
+	width: (100 / 3) * 1%;
+}
+
+.col-two-thirds {
+	width: (100 / 3) * 2%;
+}
+
+.col-half {
+	width: (100 / 2) * 1%;
+}
+
+.col-quarter {
+	width: (100 / 4) * 1%; 
+}
+
+.col-three-quarters {
+	width: (100 / 4) * 3%;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Responsive */
+@media (max-width: $medium) {
+	[class^="col-"] {
+		padding: 0 $gutter / 2;
+	}
+
+	.row {
+		margin-left: -$gutter / 2;
+		margin-right: -$gutter / 2;
+	}
+}
+
+@media (max-width: $small) {
+	[class^="col-"] {
+		width: 100%;
+	}
+	[class^="small-"] {
+	float: left;
+	padding: 0 $gutter;
+	}
+
+	@for $i from 1 through $column-count {
+		.small-#{$i} {
+			width: (100 / $column-count ) * $i * 1%;
+		}
+	}
+
+	/* Special classes */
+	.small-third {
+		width: (100 / 3) * 1%;
+	}
+
+	.small-two-thirds {
+		width: (100 / 3) * 2%;
+	}
+
+	.small-half {
+		width: (100 / 2) * 1%;
+	}
+
+	.small-quarter {
+		width: (100 / 4) * 1%; 
+	}
+
+	.small-three-quarters {
+		width: (100 / 4) * 3%;
+	}
+	
+}
+
