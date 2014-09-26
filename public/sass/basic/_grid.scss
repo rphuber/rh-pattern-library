@@ -39,6 +39,15 @@
 	padding: 0;
 }
 
+.end {
+	float: right;
+}
+
+.center {
+	float: none;
+	margin: 0 auto;
+}
+
 /* Column Width */
 @for $i from 1 through $column-count {
 	.col-#{$i} {

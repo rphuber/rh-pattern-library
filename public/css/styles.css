@@ -420,6 +420,13 @@ th {
 .flush {
   padding: 0; }
 
+.end {
+  float: right; }
+
+.center {
+  float: none;
+  margin: 0 auto; }
+
 /* Column Width */
 .col-1 {
   width: 8.33333%; }
