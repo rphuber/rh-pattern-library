@@ -1,5 +1,12 @@
 @import '../settings/settings';
 
+/*
+  *--------------------------------------------------------------------------------------------------
+  * 1.0 - Grid
+  *--------------------------------------------------------------------------------------------------
+*/
+
+
 /* Main Container */
 .container {
 	width: 95%;
@@ -35,19 +42,6 @@
 	}
 }
 
-.flush {
-	padding: 0;
-}
-
-.end {
-	float: right;
-}
-
-.center {
-	float: none;
-	margin: 0 auto;
-}
-
 /* Column Width */
 @for $i from 1 through $column-count {
 	.col-#{$i} {
@@ -76,9 +70,36 @@
 	width: (100 / 4) * 3%;
 }
 
+.flush {
+	padding: 0;
+}
+
+.end {
+	float: right;
+}
+
+.center {
+	float: none;
+	margin: 0 auto;
+}
+
 img {
 	max-width: 100%;
 	height: auto;
+}
+
+/* Push and Pull */
+@if $push == true {
+	@for $i from 1 through $column-count {
+		.push-#{$i} {
+			position: relative;
+			left: (100 / $column-count ) * $i * 1%;
+		}
+		.pull-#{$i} {
+			position: relative;
+			right: (100 / $column-count ) * $i * 1%;
+		}
+	}
 }
 
 /* Responsive */
@@ -106,37 +127,50 @@ img {
 	[class^="col-"] {
 		width: 100%;
 	}
-	[class^="small-"] {
-	float: left;
-	padding: 0 $gutter;
-	}
-
+	
+@if $push == true {
 	@for $i from 1 through $column-count {
-		.small-#{$i} {
-			width: (100 / $column-count ) * $i * 1%;
+		.push-#{$i} {
+			position: static;
+		}
+		.pull-#{$i} {
+			position: static;
 		}
 	}
+}
 
-	/* Special classes */
-	.small-third {
-		width: (100 / 3) * 1%;
-	}
+	@if $small-grid == true {
+		[class^="small-"] {
+		float: left;
+		padding: 0 $gutter;
+		}
 
-	.small-two-thirds {
-		width: (100 / 3) * 2%;
-	}
+		@for $i from 1 through $column-count {
+			.small-#{$i} {
+				width: (100 / $column-count ) * $i * 1%;
+			}
+		}
 
-	.small-half {
-		width: (100 / 2) * 1%;
-	}
+		/* Special classes */
+		.small-third {
+			width: (100 / 3) * 1%;
+		}
 
-	.small-quarter {
-		width: (100 / 4) * 1%; 
-	}
+		.small-two-thirds {
+			width: (100 / 3) * 2%;
+		}
 
-	.small-three-quarters {
-		width: (100 / 4) * 3%;
+		.small-half {
+			width: (100 / 2) * 1%;
+		}
+
+		.small-quarter {
+			width: (100 / 4) * 1%; 
+		}
+
+		.small-three-quarters {
+			width: (100 / 4) * 3%;
+		}
 	}
-	
 }
 
